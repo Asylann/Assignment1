@@ -1,12 +1,16 @@
+import models.School;
+import models.Student;
+import models.Teacher;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args) throws FileNotFoundException {
-        File Sfile = new File("src/students.txt");
+        File Sfile = new File("src/input/students.txt");
         Scanner Sscan = new Scanner(Sfile);
-        File Tfile = new File("src/teachers.txt");
+        File Tfile = new File("src/input/teachers.txt");
         Scanner Tscan = new Scanner(Tfile);
         School ARTU = new School();
         while (Sscan.hasNext()){
