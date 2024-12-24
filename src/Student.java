@@ -18,7 +18,30 @@ public class Student extends Person{
         for (int grade:grades){
             sum+=grade;
         }
-        return sum/grades.size();
+        float average = sum/grades.size();
+        if(average>=95){
+            return 4f;
+        }else if(average>=90){
+            return 3.67f;
+        }else if(average>=85){
+            return 3.33f;
+        }else if(average>=80){
+            return 3f;
+        }else if(average>=75){
+            return 2.67f;
+        }else if(average>=70){
+            return 2.33f;
+        }else if(average>=65){
+            return 2f;
+        }else if(average>=60){
+            return 1.67f;
+        }else if(average>=55){
+            return 1.33f;
+        }else if(average>=50){
+            return 1f;
+        }else{
+            return 0;
+        }
     }
 
     @Override
